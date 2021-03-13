@@ -39,6 +39,10 @@ namespace FinalAssignment_PresLayer
             {
                 MessageBox.Show("No fields may be empty!");
             }
+            else if (stateText.Text.Length > 2)
+            {
+                MessageBox.Show("Use state abbreviations please");
+            }
             else
             {
                 CustomerDataContext dc = new CustomerDataContext();
